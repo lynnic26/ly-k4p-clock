@@ -1,4 +1,4 @@
-var module = require('ui/modules').get('ly-k4p-clock');
+var module = require('ui/modules').get('ly_k4p_clock');
 module.controller('ClockController', function ($scope, $timeout) {
     var setTime = function () {
         $scope.time = Date.now();

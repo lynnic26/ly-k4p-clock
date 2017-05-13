@@ -1,5 +1,5 @@
-require('plugins/ly-k4p-clock/clock.css');
-require('plugins/ly-k4p-clock/clockController');
+require('plugins/ly_k4p_clock/clock.css');
+require('plugins/ly_k4p_clock/clockController');
 function ClockProvider (Private) {
     var TemplateVisType = Private(require('ui/template_vis_type/TemplateVisType'));
     return new TemplateVisType({
@@ -8,9 +8,9 @@ function ClockProvider (Private) {
         icon: 'fa-clock-o', // the class of the font awesome icon for this
         description: 'Add a digital clock to your dashboard.', // description shown to the users
         requiresSearch: false, // Cannot be linked to a search
-        template: require('plugins/ly-k4p-clock/clock.html'), // load the template of the visualization
+        template: require('plugins/ly_k4p_clock/clock.html'), // load the template of the visualization
         params: {
-            editor: require('plugins/ly-k4p-clock/clock-editor.html'),
+            editor: require('plugins/ly_k4p_clock/clock-editor.html'),
             defaults: {
                 format: 'HH:mm:ss'
             }
