@@ -1,4 +1,4 @@
-define(function (require) {
+
     require('plugins/ly_k4p_clock/clock.css');
     require('plugins/ly_k4p_clock/clockController');
     function ClockProvider (Private) {
@@ -19,5 +19,3 @@ define(function (require) {
         });
     }
     require('ui/registry/vis_types').register(ClockProvider);
-    return ClockProvider;
-});
